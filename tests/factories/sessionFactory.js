@@ -17,7 +17,5 @@ module.exports = (user) => {
 
 	const signature = keygrip.sign("session=" + session);
 
-	console.log(session, " :::  ", signature);
-
 	return { session, signature };
 };
